@@ -158,11 +158,20 @@ body::before {
     padding: 20px;
     width: 100%;
     margin-top: auto;
+    text-decoration: none;
     font-size: 150%;
     z-index: 1;
     margin-top: 3%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     
+}
+
+.footer p{
+    text-decoration: none;
+}
+.footer a{
+    color: #3a2f29; 
+    text-decoration: none;
 }
 
 .intro {
@@ -384,88 +393,7 @@ body::before {
 }
 
 
-@media (max-width: 991px) {
-    html {
-        font-size: 55%;
-    }
 
-    .header {
-        padding: 3rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .heading {
-        font-size: 6rem;
-    }
-
-    .heading span {
-        font-size: 2.3rem;
-    }
-
-    #menu-btn {
-        display: initial;
-    }
-
-    #menu-btn.fa-times {
-        transform: rotate(180deg);
-    }
-
-    .header .navbar {
-        position: absolute;
-        top: 99%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .header .navbar a {
-        display: block;
-        font-size: 2.2rem;
-        margin: 0;
-        padding: 1.5rem 2rem;
-    }
-
-    .home {
-        text-align: center;
-    }
-
-    .home .row .content h3 {
-        font-size: 4rem;
-    }
-
-    .menu .box-container .box {
-        margin-left: 0;
-        margin-top: 6rem;
-        flex-flow: column;
-        text-align: center;
-    }
-
-    .menu .box-container .box img {
-        margin-left: 0;
-        margin-top: -6rem;
-    }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-
-    .home .row .image img {
-        height: auto;
-        width: 100%;
-    }
-}
 .intro4 {
     background-color: #fdfce9; /* Set your desired background color */
     margin-top: 150px;
@@ -532,12 +460,7 @@ body::before {
     text-align-last: center; /* Center-align the last line within justified text */
 }
 /* Add this CSS for responsiveness */
-@media only screen and (max-width: 768px) {
-    .intro4 {
-        margin-top: 100px;
-        text-align: center;
-        flex-direction: column;
-    }
+
 
     .img .intro4 .sign1 {
         order: 2; /* Change the order to make it come after sign2 */
@@ -675,4 +598,54 @@ body::before {
 .stars {
     display: inline-block;
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+    }
+
+    .header .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .intro,
+    .intro2,
+    .intro4,
+    #coffeeVeinsIntro {
+        margin-inline: 2%;
+        font-size: 0.9rem;
+    }
+
+    .text1,
+    .text2,
+    .img1 img,
+    .img2 img {
+        margin-left: 0;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        margin-top: 5%;
+    }
+
+    .mobile-menu-content {
+        font-size: 1.2rem;
+    }
+
+    .dropbtn {
+        font-size: 1rem;
+    }
+}
+
+.contactus{
+    font-size: 1rem;
 }
